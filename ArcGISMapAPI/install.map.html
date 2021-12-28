@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <title>Arcgis Map</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.22/esri/themes/light/main.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="viewDiv">                                  <!-- Bu div etiketinde haritayı görüntüleriz-->
+    </div>
+    <div id="topbar" class="esri-widget">
+        Semboloji
+        <button class="action-button" id="layoutButton" type="button" title="Ülke isimlerini büyük harf yaz">
+            Ülke isimlerini büyük harf yaz
+        </button>
+        <button class="action-button" id="paintButton" type="button" title="Deniz dolgusunu değiştir">
+            Deniz dolgusunu değiştir
+        </button>
+    </div>
+    <div id="instruction" class="esri-widget">
+        Adresleri görmek için haritada <br> bir yere tıklayınız.<br>Click any location on the map
+    </div>
+    <div id="mainWindow">
+        <div>
+            <div style='padding-left: 4px;'>
+                <p>Örnek shape dosyasını indirmek için tıklayınız.<a href='https://bsvensson.github.io/various-tests/shp/drp_county_boundary.zip'>tıklayınız</a></p>
+                <p>Shape dosyasını Sıkıştırılmış (.zip) haliyle ekleyiniz. </p>
+                <p>Shape dosyası hakkında bilgi almak için <a target='_blank' href="https://doc.arcgis.com/en/arcgis-online/reference/shapefiles.htm">bağlantı adresini</a> ziyaret edebilirsiniz. </p>
+                <form enctype="multipart/form-data" method="post" id="uploadForm">
+                    <div class="field">
+                        <label class="file-upload">
+                            <span><strong>Shape dosyasını yükleyiniz.</strong></span>
+                            <input type="file" name="file" id="inFile"/>
+                        </label>
+                    </div>
+                </form>
+                <span class="file-upload-status" style="opacity: 1;" id="upload-status"></span>
+                <div id="fileInfo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://js.arcgis.com/4.22/">
+    </script>
+    <script src="js/script.js">
+    </script>
+    
+</body>
+</html>>
