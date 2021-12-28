@@ -1,0 +1,40 @@
+        html,body,#viewDiv                              /*Haritanın görüntüleneceği stil tanımlamaları*/
+        {
+            padding:0;
+            margin: 0;
+            height: 400px;
+            width: 600px;
+        }
+        #mainWindow p, #uploadForm                      /*Shape dosyasının yükleneceği web formun stilinin belirlenmesi*/
+        {
+            display: block;
+            padding: .1em;
+        }
+        #instruction                                    /*Harita üzerinde bir noktaya tıklamak için kullanıcıyı bilgilendiren bloğun stil tanımlaması*/
+        {
+            position: absolute;
+            top: 1%;
+            left: 5%;
+            padding: 5px;
+            height: fit-content;
+            width: fit-content;
+            background-color: rgba(25, 25, 25,0.4);
+            color: #FFFFFF;   
+        }
+        #topbar                                        
+        {
+            padding: 10px;
+        }
+        .action-button
+        {
+            font: size 14px;
+            height: 32px;
+            margin-top: 10px;
+            border: 1px solid #00558d;
+            color: #ffffff;
+        }
+        .action-button:hover
+        {
+            background: #0096ec;
+            color:#FFFFFF;
+        }
